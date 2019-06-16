@@ -1,0 +1,5 @@
+stepDefinition\WhenSteps.class
+utilities\DriverInitializer.class
+utilities\PropertyManager.class
+com\cucumberjvm\BNPP_CucumberJVM\AppTest.class
+runner\TestRunner.class
