@@ -3,21 +3,37 @@ package pageFactory;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-import utilities.DriverInitializer;
+import library.ApplicationLibraryWeb;
 
-public class LandingPage extends DriverInitializer{
+public class LandingPage extends ApplicationLibraryWeb{
 	
-	@FindBy(className = "login")
-	public static WebElement signInButton;
+	@FindBy(xpath = "//span[contains(text(),'Hello')]")
+	public static WebElement signInAccount;	
 	
-	@FindBy(id = "email")
-	public static WebElement emailTextBox;
+	@FindBy(xpath = "//span[text()='Departments']")
+	public static WebElement deptMenu;	
 	
-	@FindBy(id = "passwd")
-	public static WebElement passwordTextBox;
+	@FindBy(xpath = "//span[text()='Books']")
+	public static WebElement BooksMenu;
 	
-	@FindBy(id = "SubmitLogin")
-	public static WebElement SubmitLoginButton;
-
+	@FindBy(xpath ="//span[text()='Arts & Photography']")
+	public static WebElement artsPhotographyLink;
+	
+	@FindBy(xpath ="//span[text()='Photography & Video']")
+	public static WebElement photographyVideo;
+	
+	@FindBy(xpath ="//span[text()='Fashion']")
+	public static WebElement fashion;
+	
+	@FindBy(xpath ="//h2[text()='GUCCI: The Making Of']")
+	public static WebElement bookNameGucci;
+	
+	@FindBy(xpath ="//input[@id='add-to-cart-button']")
+	public static WebElement addToCart;
+	
+	@FindBy(xpath ="//a[contains(text(),'Proceed to checkout')]")
+	public static WebElement proceedToCheckoutButton;
+	
+	
 
 }
