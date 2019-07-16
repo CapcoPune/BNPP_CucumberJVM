@@ -1,0 +1,395 @@
+[
+  {
+    "comments": [
+      {
+        "line": 1,
+        "value": "#Author: your.email@your.domain.com"
+      },
+      {
+        "line": 2,
+        "value": "#Keywords Summary :"
+      }
+    ],
+    "line": 5,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 232762300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "Log into Amazon account",
+        "description": "",
+        "id": "add-books-to-my-cart;log-into-amazon-account;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1391359500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 9370616500,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on Landing Page of AUT",
+            "match": {
+              "location": "GenericSteps.launchApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2842595500,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Login with valid \"capcodrive@gmail.com\" and \"CapcoDrive098!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "capcodrive@gmail.com",
+                  "offset": 20
+                },
+                {
+                  "val": "CapcoDrive098!",
+                  "offset": 47
+                }
+              ],
+              "location": "GenericSteps.login(String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 76367200,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am logged into my Account successfully as \"capco\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "capco",
+                  "offset": 45
+                }
+              ],
+              "location": "GenericSteps.verifyLogin(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@Amazon"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 527900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Select Books from catogery and add to Cart",
+        "description": "",
+        "id": "add-books-to-my-cart;select-books-from-catogery-and-add-to-cart;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 52906300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 155200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I am on logged in as \"capco\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "capco",
+                  "offset": 22
+                }
+              ],
+              "location": "AddBooksToCart.verifyloggedUser(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 15639400,
+              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.7.1\u0027, revision: \u00278a0099a\u0027, time: \u00272017-11-06T21:01:39.354Z\u0027\nSystem info: host: \u0027INBA5CG8240T17\u0027, ip: \u0027172.29.81.74\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_172\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)\r\n\tat stepDefinition.AddBooksToCart.selectDepartment(AddBooksToCart.java:31)\r\n\tat ✽.When I go to \"Books\" Departments Tab(AddBooksToCart.feature:20)\r\n",
+              "status": "failed"
+            },
+            "line": 20,
+            "name": "I go to \"Books\" Departments Tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Books",
+                  "offset": 9
+                }
+              ],
+              "location": "AddBooksToCart.selectDepartment(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "I Select the SubCategory1 \"Arts \u0026 Photography Books\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Arts \u0026 Photography Books",
+                  "offset": 27
+                }
+              ],
+              "location": "AddBooksToCart.selectCategory(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "Select the SubCategory2 \"Photography \u0026 Video\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Photography \u0026 Video",
+                  "offset": 25
+                }
+              ],
+              "location": "AddBooksToCart.select_kkthe(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "Select the SubCategory3 again \"Fashion\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fashion",
+                  "offset": 31
+                }
+              ],
+              "location": "AddBooksToCart.selectthe(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "Select the Book by Name \"Tom Ford\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tom Ford",
+                  "offset": 25
+                }
+              ],
+              "location": "AddBooksToCart.select_the_Book_by_Name(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "Add the item to the Cart",
+            "match": {
+              "location": "AddBooksToCart.add_the_item_to_the_Cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "I should see the item in my Cart",
+            "match": {
+              "location": "AddBooksToCart.verifyCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@Amazon"
+          }
+        ]
+      }
+    ],
+    "name": "Add Books to my cart",
+    "description": "",
+    "id": "add-books-to-my-cart",
+    "keyword": "Feature",
+    "uri": "AddBooksToCart.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 405700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericSteps.before(Scenario)"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Customer place an order by purchasing an item from search",
+        "description": "",
+        "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 46158900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "GenericSteps.after()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 114600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Home Page",
+            "match": {
+              "location": "DataTableJson.user_is_on_Home_Page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 65100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "he search for \"dress\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dress",
+                  "offset": 15
+                }
+              ],
+              "location": "DataTableJson.he_search_for(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10812100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "enter \"Lakshay\" personal details on checkout page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Lakshay",
+                  "offset": 7
+                }
+              ],
+              "location": "DataTableJson.enter_personal_details_on_checkout_page(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Automated End2End Tests",
+    "description": "Description: The purpose of this feature is to test End 2 End integration.",
+    "id": "automated-end2end-tests",
+    "keyword": "Feature",
+    "uri": "DataTableJson.feature"
+  }
+]
