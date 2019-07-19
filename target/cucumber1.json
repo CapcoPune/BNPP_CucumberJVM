@@ -3,60 +3,37 @@
     "comments": [
       {
         "line": 1,
-        "value": "#Author: your.email@your.domain.com"
+        "value": "#Author: Chetana Kolgiri"
       },
       {
         "line": 2,
-        "value": "#Keywords Summary :"
+        "value": "#Keywords Summary : Add Books to the cart."
       }
     ],
     "line": 5,
     "elements": [
       {
-        "before": [
-          {
-            "result": {
-              "duration": 232762300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GenericSteps.before(Scenario)"
-            }
-          }
-        ],
-        "line": 16,
+        "line": 9,
         "name": "Log into Amazon account",
         "description": "",
-        "id": "add-books-to-my-cart;log-into-amazon-account;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 1391359500,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GenericSteps.after()"
-            }
-          }
-        ],
-        "type": "scenario",
-        "keyword": "Scenario Outline",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
-              "duration": 9370616500,
+              "duration": 8657182400,
               "status": "passed"
             },
             "line": 10,
             "name": "I am on Landing Page of AUT",
             "match": {
-              "location": "GenericSteps.launchApp()"
+              "location": "BackgroundStepts.launchApp()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2842595500,
+              "duration": 3147851400,
               "status": "passed"
             },
             "line": 11,
@@ -72,17 +49,13 @@
                   "offset": 47
                 }
               ],
-              "location": "GenericSteps.login(String,String)"
+              "location": "BackgroundStepts.login(String,String)"
             },
-            "matchedColumns": [
-              0,
-              1
-            ],
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 76367200,
+              "duration": 390534700,
               "status": "passed"
             },
             "line": 12,
@@ -94,18 +67,9 @@
                   "offset": 45
                 }
               ],
-              "location": "GenericSteps.verifyLogin(String)"
+              "location": "BackgroundStepts.verifyLogin(String)"
             },
-            "matchedColumns": [
-              2
-            ],
             "keyword": "Then "
-          }
-        ],
-        "tags": [
-          {
-            "line": 8,
-            "name": "@Amazon"
           }
         ]
       },
@@ -113,44 +77,33 @@
         "before": [
           {
             "result": {
-              "duration": 527900,
+              "duration": 106387200,
               "status": "passed"
             },
             "match": {
-              "location": "GenericSteps.before(Scenario)"
+              "location": "AddBooksToCart.before(Scenario)"
             }
           }
         ],
-        "line": 31,
+        "line": 29,
         "name": "Select Books from catogery and add to Cart",
         "description": "",
         "id": "add-books-to-my-cart;select-books-from-catogery-and-add-to-cart;;2",
-        "after": [
-          {
-            "result": {
-              "duration": 52906300,
-              "status": "passed"
-            },
-            "match": {
-              "location": "GenericSteps.after()"
-            }
-          }
-        ],
         "type": "scenario",
         "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 155200,
+              "duration": 105300,
               "status": "passed"
             },
-            "line": 19,
-            "name": "I am on logged in as \"capco\"",
+            "line": 17,
+            "name": "I am logged in as \"capco\"",
             "match": {
               "arguments": [
                 {
                   "val": "capco",
-                  "offset": 22
+                  "offset": 19
                 }
               ],
               "location": "AddBooksToCart.verifyloggedUser(String)"
@@ -162,11 +115,10 @@
           },
           {
             "result": {
-              "duration": 15639400,
-              "error_message": "org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?\nBuild info: version: \u00273.7.1\u0027, revision: \u00278a0099a\u0027, time: \u00272017-11-06T21:01:39.354Z\u0027\nSystem info: host: \u0027INBA5CG8240T17\u0027, ip: \u0027172.29.81.74\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_172\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:131)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:600)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:666)\r\n\tat org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:638)\r\n\tat stepDefinition.AddBooksToCart.selectDepartment(AddBooksToCart.java:31)\r\n\tat ✽.When I go to \"Books\" Departments Tab(AddBooksToCart.feature:20)\r\n",
-              "status": "failed"
+              "duration": 1826535900,
+              "status": "passed"
             },
-            "line": 20,
+            "line": 18,
             "name": "I go to \"Books\" Departments Tab",
             "match": {
               "arguments": [
@@ -184,9 +136,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2485989700,
+              "status": "passed"
             },
-            "line": 21,
+            "line": 19,
             "name": "I Select the SubCategory1 \"Arts \u0026 Photography Books\"",
             "match": {
               "arguments": [
@@ -204,9 +157,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2084631100,
+              "status": "passed"
             },
-            "line": 22,
+            "line": 20,
             "name": "Select the SubCategory2 \"Photography \u0026 Video\"",
             "match": {
               "arguments": [
@@ -224,9 +178,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2520567500,
+              "status": "passed"
             },
-            "line": 23,
+            "line": 21,
             "name": "Select the SubCategory3 again \"Fashion\"",
             "match": {
               "arguments": [
@@ -244,14 +199,15 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3359614000,
+              "status": "passed"
             },
-            "line": 24,
-            "name": "Select the Book by Name \"Tom Ford\"",
+            "line": 22,
+            "name": "Select the Book by Name \"GUCCI: The Making Of\"",
             "match": {
               "arguments": [
                 {
-                  "val": "Tom Ford",
+                  "val": "GUCCI: The Making Of",
                   "offset": 25
                 }
               ],
@@ -264,9 +220,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 3494551800,
+              "status": "passed"
             },
-            "line": 25,
+            "line": 23,
             "name": "Add the item to the Cart",
             "match": {
               "location": "AddBooksToCart.add_the_item_to_the_Cart()"
@@ -275,9 +232,10 @@
           },
           {
             "result": {
-              "status": "skipped"
+              "duration": 2213619400,
+              "status": "passed"
             },
-            "line": 26,
+            "line": 24,
             "name": "I should see the item in my Cart",
             "match": {
               "location": "AddBooksToCart.verifyCart()"
@@ -287,8 +245,246 @@
         ],
         "tags": [
           {
+            "line": 15,
+            "name": "@Book"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Log into Amazon account",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 6385218200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "I am on Landing Page of AUT",
+            "match": {
+              "location": "BackgroundStepts.launchApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2774477100,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I Login with valid \"capcodrive@gmail.com\" and \"CapcoDrive098!\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "capcodrive@gmail.com",
+                  "offset": 20
+                },
+                {
+                  "val": "CapcoDrive098!",
+                  "offset": 47
+                }
+              ],
+              "location": "BackgroundStepts.login(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 59341800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I am logged into my Account successfully as \"capco\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "capco",
+                  "offset": 45
+                }
+              ],
+              "location": "BackgroundStepts.verifyLogin(String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1134900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "AddBooksToCart.before(Scenario)"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "Select Books from catogery and add to Cart",
+        "description": "",
+        "id": "add-books-to-my-cart;select-books-from-catogery-and-add-to-cart;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 84900,
+              "status": "passed"
+            },
             "line": 17,
-            "name": "@Amazon"
+            "name": "I am logged in as \"capco\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "capco",
+                  "offset": 19
+                }
+              ],
+              "location": "AddBooksToCart.verifyloggedUser(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1944325200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I go to \"Books\" Departments Tab",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Books",
+                  "offset": 9
+                }
+              ],
+              "location": "AddBooksToCart.selectDepartment(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2291476900,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "I Select the SubCategory1 \"Arts \u0026 Photography Books\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Arts \u0026 Photography Books",
+                  "offset": 27
+                }
+              ],
+              "location": "AddBooksToCart.selectCategory(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1916694000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Select the SubCategory2 \"Photography \u0026 Video\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Photography \u0026 Video",
+                  "offset": 25
+                }
+              ],
+              "location": "AddBooksToCart.select_kkthe(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1621901800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Select the SubCategory3 again \"Fashion\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Fashion",
+                  "offset": 31
+                }
+              ],
+              "location": "AddBooksToCart.selectthe(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4761131500,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Select the Book by Name \"Chanel: Collections and Creations\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chanel: Collections and Creations",
+                  "offset": 25
+                }
+              ],
+              "location": "AddBooksToCart.select_the_Book_by_Name(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3189656100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "Add the item to the Cart",
+            "match": {
+              "location": "AddBooksToCart.add_the_item_to_the_Cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2296150600,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "I should see the item in my Cart",
+            "match": {
+              "location": "AddBooksToCart.verifyCart()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Book"
           }
         ]
       }
@@ -306,26 +502,26 @@
         "before": [
           {
             "result": {
-              "duration": 405700,
+              "duration": 1185500,
               "status": "passed"
             },
             "match": {
-              "location": "GenericSteps.before(Scenario)"
+              "location": "AddBooksToCart.before(Scenario)"
             }
           }
         ],
-        "line": 11,
+        "line": 12,
         "name": "Customer place an order by purchasing an item from search",
         "description": "",
         "id": "automated-end2end-tests;customer-place-an-order-by-purchasing-an-item-from-search;;2",
         "after": [
           {
             "result": {
-              "duration": 46158900,
+              "duration": 316060700,
               "status": "passed"
             },
             "match": {
-              "location": "GenericSteps.after()"
+              "location": "AddBooksToCart.after()"
             }
           }
         ],
@@ -334,10 +530,10 @@
         "steps": [
           {
             "result": {
-              "duration": 114600,
+              "duration": 852200,
               "status": "passed"
             },
-            "line": 5,
+            "line": 6,
             "name": "user is on Home Page",
             "match": {
               "location": "DataTableJson.user_is_on_Home_Page()"
@@ -346,10 +542,10 @@
           },
           {
             "result": {
-              "duration": 65100,
+              "duration": 591200,
               "status": "passed"
             },
-            "line": 6,
+            "line": 7,
             "name": "he search for \"dress\"",
             "match": {
               "arguments": [
@@ -364,15 +560,15 @@
           },
           {
             "result": {
-              "duration": 10812100,
+              "duration": 26587300,
               "status": "passed"
             },
-            "line": 7,
-            "name": "enter \"Lakshay\" personal details on checkout page",
+            "line": 8,
+            "name": "enter \"Chetana\" personal details on checkout page",
             "match": {
               "arguments": [
                 {
-                  "val": "Lakshay",
+                  "val": "Chetana",
                   "offset": 7
                 }
               ],
@@ -382,6 +578,12 @@
               0
             ],
             "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Data"
           }
         ]
       }

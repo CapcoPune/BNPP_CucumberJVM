@@ -3,6 +3,7 @@ C:\Users\cklg\eclipse-workspace\BNPP_CucumberJVM\src\test\java\configuration\Con
 C:\Users\cklg\eclipse-workspace\BNPP_CucumberJVM\src\test\java\runner\TestRunner.java
 C:\Users\cklg\eclipse-workspace\BNPP_CucumberJVM\src\test\java\testDataTypes\Customer.java
 C:\Users\cklg\eclipse-workspace\BNPP_CucumberJVM\src\test\java\utilities\DriverInitializer.java
+C:\Users\cklg\eclipse-workspace\BNPP_CucumberJVM\src\test\java\reports\ExtentManager.java
 C:\Users\cklg\eclipse-workspace\BNPP_CucumberJVM\src\test\java\stepDefinition\GenericSteps.java
 C:\Users\cklg\eclipse-workspace\BNPP_CucumberJVM\src\test\java\stepDefinition\DataTableJson.java
 C:\Users\cklg\eclipse-workspace\BNPP_CucumberJVM\src\test\java\pageFactory\HomePage.java

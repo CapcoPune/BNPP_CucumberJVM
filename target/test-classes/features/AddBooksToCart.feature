@@ -1,22 +1,20 @@
-#Author: your.email@your.domain.com
-#Keywords Summary :
+#Author: Chetana Kolgiri
+#Keywords Summary : Add Books to the cart.
 
 
 Feature: Add Books to my cart 
   
 
-@Amazon
-  Scenario Outline: Log into Amazon account 
+
+  Background: Log into Amazon account 
     Given I am on Landing Page of AUT
-    When I Login with valid "<UserName>" and "<Password>"
-    Then I am logged into my Account successfully as "<User>"
+    When I Login with valid "capcodrive@gmail.com" and "CapcoDrive098!"
+    Then I am logged into my Account successfully as "capco"
     
- Examples:    
-    | UserName            | Password       | User  |             
- 		| capcodrive@gmail.com| CapcoDrive098! | capco |
- @Amazon
+
+ @Book
  Scenario Outline: Select Books from catogery and add to Cart 
-    Given I am on logged in as "<User>"
+    Given I am logged in as "<User>"
     When I go to "<Dept>" Departments Tab
  	  And  I Select the SubCategory1 "<Category1>"
   	And Select the SubCategory2 "<Category2>"
@@ -28,5 +26,6 @@ Feature: Add Books to my cart
 
    Examples: 
      |User | Dept | Category1                 | Category2 					| Category3 | Book     |
-     |capco| Books| Arts & Photography Books  | Photography & Video | Fashion   |	Tom Ford |
+     |capco| Books| Arts & Photography Books  | Photography & Video | Fashion   |	GUCCI: The Making Of |
+     |capco| Books| Arts & Photography Books  | Photography & Video | Fashion   |	Chanel: Collections and Creations |
  
